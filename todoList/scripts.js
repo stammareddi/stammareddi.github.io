@@ -1,23 +1,21 @@
 
 class ToDoClass {
     constructor() {
-        /*tasks is assigned to a local storage variable in order to retrieve are stored data.
-        We save our taks in localStorage as a string with 'TASKS' as its key.
-        So when the user opens the website for the first time we need to check if any data is present in local storage with the
+        /*
+         When the user opens the website for the first time we need to check if any data is present in local storage with the
         key TASKS. We use JSON.parse to convert the data retrieved from localStorage from a string to an object.
         */
         this.tasks = JSON.parse(localStorage.getItem('TASKS'));
         if(!this.tasks){
             this.tasks =  [
-                { task: 'Go To Dentist', isComplete: false },
-                { task: 'Do Gardening', isComplete: true },
-                { task: 'Renew Library Account', isComplete: false },
+                { task: 'Workout', isComplete: false },
+                { task: 'Finish up homework', isComplete: true },
+                { task: 'Buy birthday gift', isComplete: false },
             ];
         }
         
         this.loadTasks();
-        
-        //its best to call event listeners in the constructor, so that the event listeners are set up when the class is initialized
+     
         this.addEventListener();
     }
 
@@ -30,7 +28,6 @@ class ToDoClass {
         });
     }
 
-    //changes the toggleStatus of the checkbox 
     toggleTaskStatus(index) {
         this.tasks[index].isComplete = !this.tasks[index].isComplete;
         this.loadTasks();
@@ -68,9 +65,7 @@ class ToDoClass {
         }
     }
 
-    /*note if you want to use a css style inside a div in a class that also contains other default classes in boothstrap
-        you have to use ES6 notation to apply it. This means  ${cssClassName}
-    */
+  
     generateTaskHtml(task, index) {
         return `
             <li class="list-group-item checkbox">
@@ -90,11 +85,10 @@ class ToDoClass {
     }
 
     loadTasks() {
-        //we use local storage here just incase the value in the constructor is set to null,
-        //then now we will add the 3 predefine values in the task variable to the local storage right away.
+     
         localStorage.setItem('TASKS', JSON.stringify(this.tasks));
 
-        //research more on reduce
+   
         let taskHtml = this.tasks.reduce((html, task, index) => html += this.generateTaskHtml(task, index), '');
         document.getElementById('taskList').innerHTML = taskHtml;
     }
