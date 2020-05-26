@@ -36,10 +36,10 @@ My last tab is a to-do list which I created using bootstrap where it’s a respo
 
 <h4> The Music Maker application </h4>
 
-Index.html
+<i> Index.html <br> <br>
 The html file consisted of div tags where the class was from pad1 to pad6. Each pad consisted of a audio tag which had a unique audio sound. 
 
-Index.js
+<i> Index.js <br> <br>
 I used a event listener to store the sounds, pad, visual, and info in constant variables whenever the page loads. Lastly I had a color array which stored colors in hexadecimal. 
 
 Once the user clicks on a pad it would trigger a event listener where it would play the specific sound for that color and it calls the createBubble function.
@@ -50,7 +50,7 @@ On top of that, I was also interested in adding a feature where you can play the
 
 The logKey is a helper function that would create a bubble and based on the certain key pressed it would go ahead and play the sound with the animation. Lastly I made sure to delete the animated bubbles ones the animation ended.
 
-Style.css
+<i> Style.css <br> <br> 
 This website was designed using the border-box style property. My keyframes were labled from jumpGreen up to the sixth color which was jumpRed. Each keyframe had a unique animation because the created bubble had to come from the color clicked on rather than one start and end position for the bubbles.
 
 
