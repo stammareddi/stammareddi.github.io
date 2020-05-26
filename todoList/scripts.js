@@ -1,16 +1,13 @@
 
 class ToDoClass {
     constructor() {
-        /*
-         When the user opens the website for the first time we need to check if any data is present in local storage with the
-        key TASKS. We use JSON.parse to convert the data retrieved from localStorage from a string to an object.
-        */
+     
         this.tasks = JSON.parse(localStorage.getItem('TASKS'));
         if(!this.tasks){
             this.tasks =  [
                 { task: 'Workout', isComplete: false },
                 { task: 'Finish up homework', isComplete: true },
-                { task: 'Buy birthday gift', isComplete: false },
+                { task: 'Buy birthday gift for Joe', isComplete: false },
             ];
         }
         
@@ -93,6 +90,8 @@ class ToDoClass {
         document.getElementById('taskList').innerHTML = taskHtml;
     }
 }
+
+
 
 let toDo;
 window.addEventListener("load", () => {
