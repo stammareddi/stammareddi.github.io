@@ -34,7 +34,7 @@ This includes a about me tab and login tab.
 The other tab will lead the users using the application to my projects on GitHub. 
 My last tab is a to-do list which I created using bootstrap where it’s a responsive webpage following the breakpoints of the screen.
 
-<h4> The Music Maker application <h4>
+<h4> The Music Maker application </h4>
 
 Index.html
 The html file consisted of div tags where the class was from pad1 to pad6. Each pad consisted of a audio tag which had a unique audio sound. 
