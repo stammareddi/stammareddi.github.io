@@ -57,5 +57,5 @@ This website was designed using the border-box style property. My keyframes were
 
 #### Status 
 
-Working towards implementing bootstrap on the music maker application also. While continuisuly working on creating 
-my about me tab and a unique login page.
+Working towards implementing bootstrap on the music maker application, while continuisuly working on creating 
+my about me and a login page.
