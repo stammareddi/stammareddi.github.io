@@ -13,7 +13,7 @@
 
 # Info
 
-The goal of this project was to create a small game where the users clicks on a color to output a unique sound 
+The goal of this project was to create a game where the users clicks on a color to output a unique sound.
 This application is a great introductory project to using keyframes in css. 
 
 ## Technologies 
@@ -57,3 +57,5 @@ This website was designed using the border-box style property. My keyframes were
 
 #### Status 
 
+Working towards implementing bootstrap on the music maker application also. While continuisuly working on creating 
+my about me tab and a unique login page.
