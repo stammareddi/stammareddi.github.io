@@ -11,7 +11,7 @@
 4. [Status](#Status)
 
 
-# Info
+## Info
 
 The goal of this project was to create a game where the users clicks on a color to output a unique sound.
 This application is a great introductory project to using keyframes in css. 
@@ -55,7 +55,7 @@ This website was designed using the border-box style property. My keyframes were
 
 
 
-#### Status 
+## Status 
 
 Working towards implementing bootstrap on the music maker application, while continuisuly working on creating 
 my about me and a login page.
