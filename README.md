@@ -26,7 +26,7 @@ JAVASCRIPT <br>
 BOOTSTRAP <br>
  
 
-### Setup
+## Setup
 
 At the top of the application it consists of an animated nav bar at the top.
 
