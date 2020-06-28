@@ -2,7 +2,7 @@
 
 <h1> MusicMaker - Gaming & Personal Web Application </h1>
 
-<a href="stammareddi.github.io" > Click Me! </a>
+<a href="https://stammareddi.github.io/" > Click Me! </a>
 # Table of Contents
 
 1. [Info](#Info)
